@@ -1,4 +1,15 @@
 data_path: data/raw/
+tickers:
+  - AAPL
+  - MSFT
 start_date: 2020-01-01
-end_date: 2021-01-01
-initial_capital: 100000
+end_date: 2023-12-31
+
+initial_capital: 100000.0
+commission: 0.001       
+slippage: 0.0005        
+
+strategy:
+  type: Momentum
+  lookback: 20
+  threshold: 0.0
